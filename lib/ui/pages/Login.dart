@@ -83,7 +83,7 @@ class Loginpg extends StatelessWidget {
                               ),
                             ),
                             onTap: () {},
-                          )
+                          ),
                         ],
                       ),
                     ),

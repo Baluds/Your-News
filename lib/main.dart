@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yournews/ui/pages/Login.dart';
+import 'package:yournews/ui/pages/Register.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,13 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Loginpg(),
+      home: Registerpg(),
       // Welcomepg(title: 'Flutter Demo Home Page'),
-      //  routes: {
-      //   Loginpage.id: (context) => Loginpage(),
-      //   RegisterPage.id: (context) => RegisterPage(),
-      //   Welcome.id: (context) => Welcomepage(),
-      // },
+      routes: {
+        Loginpg.id: (context) => Loginpg(),
+        Registerpg.id: (context) => Registerpg(),
+        //   Welcome.id: (context) => Welcomepage(),
+      },
     );
   }
 }
