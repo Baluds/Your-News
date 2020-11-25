@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Welcomepg(),
-      // Welcomepg(title: 'Flutter Demo Home Page'),
       routes: {
         Loginpg.id: (context) => Loginpg(),
         Registerpg.id: (context) => Registerpg(),

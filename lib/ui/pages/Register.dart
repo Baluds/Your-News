@@ -4,6 +4,7 @@ import 'package:yournews/constants.dart';
 import 'package:yournews/ui/pages/Login.dart';
 import 'package:yournews/widgets/Regfields.dart';
 import 'package:yournews/widgets/painter.dart';
+import 'package:yournews/widgets/regpass.dart';
 
 class Registerpg extends StatelessWidget {
   const Registerpg({Key key}) : super(key: key);
@@ -92,10 +93,7 @@ class Registerpg extends StatelessWidget {
                               icn: Icons.mail,
                               str: 'Enter Email',
                             ),
-                            Regfields(
-                              icn: Icons.lock,
-                              str: 'Enter Password',
-                            ),
+                            Regpassfields(),
                             NiceButton(
                               width: _width * 0.7,
                               elevation: 8.0,

@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 
-class Regfields extends StatelessWidget {
-  const Regfields({
-    @required this.icn,
-    @required this.str,
+class Regpassfields extends StatefulWidget {
+  const Regpassfields({
     Key key,
   }) : super(key: key);
-  final IconData icn;
-  final String str;
+  _RegpassfieldsState createState() => _RegpassfieldsState();
+}
+
+class _RegpassfieldsState extends State<Regpassfields> {
+  bool passwordHidden;
+  @override
+  void initState() {
+    super.initState();
+
+    passwordHidden = true;
+  }
+
   @override
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
@@ -17,7 +25,7 @@ class Regfields extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Icon(
-            icn,
+            Icons.lock,
             color: Colors.white,
           ),
         ),
@@ -30,8 +38,9 @@ class Regfields extends StatelessWidget {
           ),
           child: SizedBox(
             height: 40,
-            width: _width * 0.5,
+            width: _width * 0.45,
             child: TextFormField(
+              obscureText: passwordHidden,
               keyboardType: TextInputType.emailAddress,
               onChanged: (value) {},
               style: TextStyle(
@@ -47,7 +56,7 @@ class Regfields extends StatelessWidget {
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
                 ),
-                hintText: str,
+                hintText: 'Enter Password',
                 hintStyle: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -55,6 +64,18 @@ class Regfields extends StatelessWidget {
               ),
             ),
           ),
+        ),
+        GestureDetector(
+          child: Icon(
+            passwordHidden ? Icons.visibility_off : Icons.visibility,
+            color: Colors.white,
+          ),
+          onTap: () {
+            setState(() {
+              print(passwordHidden);
+              passwordHidden = !passwordHidden;
+            });
+          },
         ),
       ],
     );
