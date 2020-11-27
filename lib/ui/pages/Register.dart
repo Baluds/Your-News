@@ -106,6 +106,12 @@ class Registerpg extends StatelessWidget {
                               background: kprimarydark,
                               onPressed: () {
                                 // Navigator.pushNamed(context, Landing.id);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Loginpg(),
+                                  ),
+                                );
                               },
                             ),
                             InkWell(
