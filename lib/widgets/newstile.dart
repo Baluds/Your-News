@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yournews/ui/pages/webviewnews.dart';
 
 class NewsTile extends StatelessWidget {
   final String imgUrl, title, desc, posturl;
@@ -14,7 +15,16 @@ class NewsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ArticleView(
+              postUrl: posturl,
+            ),
+          ),
+        );
+      },
       child: Container(
         margin: EdgeInsets.only(bottom: 24),
         width: _width,
