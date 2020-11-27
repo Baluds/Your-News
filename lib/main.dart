@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:yournews/ui/pages/Login.dart';
 import 'package:yournews/ui/pages/Register.dart';
 import 'package:yournews/ui/pages/home.dart';
-import 'package:yournews/ui/pages/webviewnews.dart';
 import 'package:yournews/ui/pages/welcome.dart';
 
 void main() {

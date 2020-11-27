@@ -1,5 +1,5 @@
 import 'package:http/http.dart' as http;
-import 'package:yournews/api.dart';
+//import 'package:yournews/api.dart';
 import 'dart:convert';
 
 import 'package:yournews/model/apimodel.dart';
@@ -9,7 +9,7 @@ class News {
 
   Future<void> getNews() async {
     String url =
-        "https://newsapi.org/v2/top-headlines?country=in&category=Technology&apiKey=$apiKey";
+        "https://newsapi.org/v2/top-headlines?country=in&category=Technology&apiKey=apiKey"; //add $ so that we can use api key here
 
     var response = await http.get(url);
 
