@@ -33,11 +33,14 @@ class Loginpg extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Center(
-                      child: Container(
-                        width: _width * 0.9,
-                        height: _height * 0.4,
-                        child: Image(
-                          image: AssetImage('assets/images/loginpg.png'),
+                      child: Hero(
+                        tag: 'pic',
+                        child: Container(
+                          width: _width * 0.9,
+                          height: _height * 0.4,
+                          child: Image(
+                            image: AssetImage('assets/images/loginpg.png'),
+                          ),
                         ),
                       ),
                     ),

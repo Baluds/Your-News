@@ -20,11 +20,14 @@ class Welcomepg extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Center(
-                  child: Container(
-                    width: _width,
-                    height: _height * 0.35,
-                    child: Image(
-                      image: AssetImage('assets/images/welcomepg_main.png'),
+                  child: Hero(
+                    tag: 'pic',
+                    child: Container(
+                      width: _width,
+                      height: _height * 0.35,
+                      child: Image(
+                        image: AssetImage('assets/images/welcomepg_main.png'),
+                      ),
                     ),
                   ),
                 ),

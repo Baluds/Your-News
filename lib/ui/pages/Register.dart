@@ -44,13 +44,16 @@ class Registerpg extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          width: _width * 0.6,
-                          height: _height * 0.36,
-                          child: Center(
-                            child: Image(
-                              image:
-                                  AssetImage('assets/images/registerpgL.png'),
+                        Hero(
+                          tag: 'pic',
+                          child: Container(
+                            width: _width * 0.6,
+                            height: _height * 0.36,
+                            child: Center(
+                              child: Image(
+                                image:
+                                    AssetImage('assets/images/registerpgL.png'),
+                              ),
                             ),
                           ),
                         ),
