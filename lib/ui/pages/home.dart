@@ -37,16 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: kprimary,
-        title: Center(
-          child: Text("Your News"),
-        ),
+        title: Text("Your News"),
       ),
       body: SafeArea(
         child: _loading
             ? Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 8.0,
+                  vertical: 16,
+                ),
                 child: Shimmer.fromColors(
                   baseColor: Colors.grey[300],
                   highlightColor: Colors.grey[100],

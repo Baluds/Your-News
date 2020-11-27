@@ -21,10 +21,12 @@ class _ArticleViewState extends State<ArticleView> {
     final _width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text(
-            "Your News",
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        centerTitle: true,
+        title: Text(
+          "Your News",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w600,
           ),
         ),
         backgroundColor: kprimary,
