@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:nice_button/nice_button.dart';
 import 'package:yournews/constants.dart';
+import 'package:yournews/ui/pages/home.dart';
 import 'package:yournews/widgets/Textfields.dart';
 import 'package:yournews/widgets/painter.dart';
 import 'package:yournews/widgets/passwordfield.dart';
@@ -73,7 +74,7 @@ class Loginpg extends StatelessWidget {
                             textColor: Colors.white,
                             background: kprimarydark,
                             onPressed: () {
-                              // Navigator.pushNamed(context, Landing.id);
+                              Navigator.pushNamed(context, MyHomePage.id);
                             },
                           ),
                           InkWell(

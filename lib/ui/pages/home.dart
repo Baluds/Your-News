@@ -7,6 +7,7 @@ import 'package:yournews/widgets/shimmerwidget.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
+  static const String id = 'Homepg';
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
