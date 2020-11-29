@@ -42,6 +42,7 @@ class Loginpg extends StatelessWidget {
                           child: Image(
                             image: AssetImage('assets/images/loginpg.png'),
                           ),
+                          //or Image(image:NetworkImage('url'),),
                         ),
                       ),
                     ),
